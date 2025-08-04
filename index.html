@@ -3,13 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSL Certificate Download</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Download SSL Certificate</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container */
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Button styling */
+        .download-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .download-btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+
+        /* Footer styling */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Download SSL Certificate</h1>
-    <p>Click the link below to download the SSL certificate for secure connections:</p>
-    <ul>
-        <li><a href="https://username.github.io/repository-name/certificates/server.crt" download>Download SSL Certificate</a></li>
-    </ul>
+    <div class="container">
+        <h1>Download SSL Certificate</h1>
+        <p>Click the button below to download the SSL certificate for secure connections.</p>
+        <a href="https://username.github.io/repository-name/certificates/server.crt" download class="download-btn">Download SSL Certificate</a>
+    </div>
+
+    <footer>
+        <p>© 2025 SSL Certificate Distribution. All rights reserved.</p>
+    </footer>
 </body>
 </html>
